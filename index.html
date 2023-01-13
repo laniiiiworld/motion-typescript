@@ -5,10 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Motion</title>
+    <script src="https://kit.fontawesome.com/4f9bfe4b53.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./index.css" />
     <script type="module" src="./build/index.js" defer></script>
   </head>
   <body>
-    <div class="app"></div>
+    <div class="app">
+      <header class="header">
+        <div class="logo">
+          <i class="fa-solid fa-book-open"></i>
+          <span>Motion</span>
+        </div>
+        <ul class="icons">
+          <li class="icon"><i class="fa-solid fa-image"></i></li>
+          <li class="icon"><i class="fa-brands fa-youtube"></i></li>
+          <li class="icon"><i class="fa-solid fa-file-pen"></i></li>
+          <li class="icon"><i class="fa-solid fa-square-check"></i></li>
+        </ul>
+      </header>
+      <main class="mainPage">
+        <article class="memo">
+          <div class="content row">
+            <div class="wrap">
+              <img class="image" src="https://picsum.photos/seed/picsum/200/300" alt="img alt" />
+            </div>
+            <p class="title">image title</p>
+          </div>
+          <button class="deleteBtn"><i class="fa-solid fa-delete-left"></i></button>
+        </article>
+        <article class="memo">
+          <div class="content row">
+            <div class="wrap">
+              <iframe id="player" type="text/html" src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p class="title">video title</p>
+          </div>
+          <button class="deleteBtn"><i class="fa-solid fa-delete-left"></i></button>
+        </article>
+        <article class="memo">
+          <div class="content column">
+            <p class="title">note title</p>
+            <p class="detail">note body</p>
+          </div>
+          <button class="deleteBtn"><i class="fa-solid fa-delete-left"></i></button>
+        </article>
+        <article class="memo">
+          <div class="content column">
+            <p class="title">todo title</p>
+            <p class="detail"><input type="checkbox" id="checkbox" class="checkbox" /><label for="checkbox" class="label">todo body</label></p>
+          </div>
+          <button class="deleteBtn"><i class="fa-solid fa-delete-left"></i></button>
+        </article>
+      </main>
+      <footer class="footer">
+        <p class="title">Try it!</p>
+        <p>Motion is a simple note-taking app. You can write images, videos (YouTube), memos, to-dos, and more. You can also change the order if you want.</p>
+      </footer>
+      <form class="form">
+        <p>Title</p>
+        <input type="text" class="title" />
+        <p>URL</p>
+        <input type="text" class="detail" />
+        <button class="addBtn">ADD</button>
+      </form>
+    </div>
   </body>
 </html>
